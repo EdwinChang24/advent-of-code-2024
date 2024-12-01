@@ -1,0 +1,1 @@
+fun main()=java.io.File("i").readLines().map{it.split(' ')}.run{println(indices.sumOf{Math.abs(sortedBy{it[0]}[it][0].toInt()-sortedBy{it[3]}[it][3].toInt())})}

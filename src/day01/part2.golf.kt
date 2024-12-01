@@ -1,0 +1,1 @@
+fun main()=java.io.File("i").readLines().map{it.split(' ')}.run{println(sumOf{n->n[0].toInt()*count{it[3]==n[0]}})}

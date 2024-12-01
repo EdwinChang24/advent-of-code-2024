@@ -11,3 +11,6 @@ tab_width = 4
 
 [.idea/**.xml]
 insert_final_newline = unset
+
+[**.golf.kt]
+insert_final_newline = false
