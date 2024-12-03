@@ -1,1 +1,1 @@
-fun main()=println(java.io.File("i").readLines().map{it.split(' ').map{it.toInt()}}.count{r->"$r" in "${r.sorted()}${r.sortedDescending()}"&&r.sorted().windowed(2).all{it[1]-it[0]in 1..3}})
+fun main()=println(java.io.File("i").readLines().map{it.split(' ').map{it.toInt()}}.count{r->(r==r.sorted()||r==r.sortedDescending())&&r.sorted().windowed(2).all{it[1]-it[0]in 1..3}})
