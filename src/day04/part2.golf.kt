@@ -1,0 +1,1 @@
+fun main()=java.io.File("i").readLines().run{println(mapIndexed{i,l->l.indices.filter{l[it]=='A'}.count{listOf(getOrElse(i-1){""}.getOrElse(it-1){' '},getOrElse(i-1){""}.getOrElse(it+1){' '},getOrElse(i+1){""}.getOrElse(it+1){' '},getOrElse(i+1){""}.getOrElse(it-1){' '}).joinToString("")in "MMSSSMMSSSMMMSSM".chunked(4)}}.sum())}
