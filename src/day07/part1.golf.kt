@@ -1,0 +1,1 @@
+fun main()=println(java.io.File("i").readLines().map{it.split(": ").let{it[0].toLong()to it[1].split(" ").map{it.toLong()}}}.filter{e->(0..<Math.pow(2.0,e.second.size.toDouble()-1).toInt()).any{e.second.reduceIndexed{i,a,l->if(it.toString(2).reversed().getOrNull(i-1)=='1')a*l else a+l}==e.first}}.sumOf{it.first})
